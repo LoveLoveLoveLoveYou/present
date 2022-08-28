@@ -116,8 +116,8 @@ animate();
 stars = document.getElementsByClassName("star");
 let timerId = setInterval(() => init(), 300);
 for (i in stars) {
-    stars[i].style.left = `${Math.random() * (window.innerWidth - 60) }px`;
-    stars[i].style.top = `${Math.random() * (window.innerHeight - 60) }px`;
+    stars[i].style.left = `${Math.random() * (window.innerWidth - 100) }px`;
+    stars[i].style.top = `${Math.random() * (window.innerHeight - 100) }px`;
     stars[i].addEventListener("click", function() {
         for (let j = 0; j < 10; ++j) {
             init()
