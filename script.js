@@ -113,6 +113,7 @@ function clickHandler() {
 
 init();
 animate();
+document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
 stars = document.getElementsByClassName("star");
 let timerId = setInterval(() => init(), 300);
 for (i in stars) {
